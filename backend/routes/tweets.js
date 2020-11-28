@@ -98,10 +98,10 @@ router.delete('/:id', async (req, res)=>{
 // Get Your Individual Tweets 
 router.get('/:id', async (req, res)=> {
     try{
-        const selectedTweets = await tweetModel.find({ userID : req.params.id })
+        const selectedTweets = await tweetModel.find({ userID : req.params.id }).sort({"createdAt": 'desc'})
         res.status(200).json(selectedTweets)
     }catch(err){
-        err.status(400).send('was not about to get your tweets')
+        err.status(400).send('was not able to get your tweets')
     }
 })
 

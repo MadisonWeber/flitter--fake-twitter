@@ -1,0 +1,42 @@
+
+.sidebar__container{
+
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.sidebar__container > div {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    border-radius: 40px;
+    padding: .7rem;
+    transition: 100ms ease-in;
+    cursor: pointer;
+}
+
+.sidebar__container > div:hover,
+.sidebar__container > div:hover ~ .sidebar__container > div > i{
+    background-color: rgba(30, 144, 255, .25);
+    color: var(--main-color);
+}
+
+
+.sidebar__container > div > i {
+    font-size: 20px;
+    flex: .2;
+   
+}
+
+
+.sidebar__container > div >  p{
+    font-size: 20px;
+    font-family: var(--main-font);
+    flex: .6;
+    font-weight: 600;
+}

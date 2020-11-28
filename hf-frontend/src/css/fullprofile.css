@@ -1,0 +1,134 @@
+.full__profile__container{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--dark-mode-lighter);
+    min-height: 292px;
+    margin: 4px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.avatar__large{
+    margin: 0 10px;
+    height: 125px;
+    min-height: 125px;
+    width: 125px;
+    min-width: 125px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.avatar__image__large{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar__image_no_user__large{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.full__profile__top{
+    flex: .6;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: .7;
+}
+
+.full__profile__info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.full__profile__info > * {
+    padding: 5px;
+}
+
+.full__profile__user{
+    color: var(--main-col);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.full__profile__email{
+    color: var(--dark-grey);
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.full__profile__following{
+    margin-bottom: 15px;
+}
+
+.full__profile__bottom{
+    flex: .1;
+    height: 100%;
+    width: 80%;
+    padding-bottom: 0;
+    flex-grow: .3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.full__profile__change{
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 800; 
+    color: var(--dark-grey);
+    outline-width: none;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.full__profile__change:hover{
+    color: var(--main-col);
+    background-color: rgba(30, 144, 255, .15);
+}
+
+.currently_main{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+.full__profile__change:focus{
+    outline: none;
+} 
+
+.full__profile__followers,
+.full__profile__following{
+    font-size: 13px;
+    color: var(--main-color);
+    cursor: pointer;
+
+}
+
+
+.full__profile__change:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+.GREY{
+    color: var(--dark-grey);
+}

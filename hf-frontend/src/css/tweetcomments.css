@@ -1,0 +1,6 @@
+.tweet__comments__title{
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--main-color);
+}

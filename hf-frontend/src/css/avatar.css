@@ -1,0 +1,23 @@
+.avatar{
+    margin: 0 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.avatar__image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar__image_no_user{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}

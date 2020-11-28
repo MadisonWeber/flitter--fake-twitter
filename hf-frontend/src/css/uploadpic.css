@@ -1,0 +1,81 @@
+.upload__pic__overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(100, 100, 100, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload__pic__form{
+    background-color: var(--dark-mode-medium);
+    height: max(300px, 40%);
+    width: max(380px, 40%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    animation: slideIn 300ms ease-in-out;
+   
+}
+
+.upload__pic__title{
+    color: white;
+    font-family: var(--main-font);
+}
+
+.upload__pic__form > input{
+    transform: translateX(35px);
+    color: white;
+}
+
+
+.upload__pic__message{
+    color: var(--main-color);
+    font-size: 12px;
+
+}
+
+.upload__pic__submit{
+    background-color: var(--main-color);
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 40px;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 700;
+    margin-right: 5px;
+    outline: none;
+}
+
+.upload__pic__submit:active{
+    transform: scale(1.05);
+}
+
+.exit__upload__pic{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.exit__upload__pic > .fa-times{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.upload__pic__message > .fa-times{
+    color: white;
+    cursor: pointer;
+}
+
+

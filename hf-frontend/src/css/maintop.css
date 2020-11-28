@@ -1,0 +1,25 @@
+.main__section__title{
+    margin:0 15px;
+}
+
+.main__section__header{
+    background-color: rgb(22, 32, 46);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-left: 1px solid var(--border-col);
+    border-right: 1px solid var(--border-col);
+    border-bottom: 1px solid var(--border-col);
+}
+
+.main__section__header.featuredTweet{
+    justify-content: flex-start;
+}
+
+.fa-arrow-left{
+    font-size: 22px;
+    color: var(--main-color);
+    margin:0 15px;
+    cursor: pointer;
+}

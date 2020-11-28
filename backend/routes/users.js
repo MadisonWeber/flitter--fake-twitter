@@ -65,6 +65,32 @@ router.patch('/profilePic', async(req, res)=>{
     }
 })
 
+// Follow User 
+
+router.post('/follow/:id', async(req, res)=>{
+    try{
+        const updateFollowers = await User.findByIdAndUpdate({_id : req.params.id}, 
+            {$push : {followers : req.body.currentUserID} }, {new : true} )
+        const updateFollowing = await User.findByIdAndUpdate({_id: req.body.currentUserID},
+            {$push : { following : req.params.id}}, {new : true})
+        res.status(200).json({updateUserFollowed : updateFollowers, updateCurrentUser : updateFollowing})
+    }catch(err){
+        res.status(400).json({message : "could not follow"})
+    }
+})
+
+
+router.post('/unfollow/:id', async(req, res)=>{
+    try{
+        const updateFollowers = await User.findByIdAndUpdate({_id : req.params.id}, 
+            {$pull : {followers : req.body.currentUserID} }, {new : true} )
+        const updateFollowing = await User.findByIdAndUpdate({_id: req.body.currentUserID},
+            {$pull : { following : req.params.id}}, {new : true})
+        res.status(200).json({updateUserFollowed : updateFollowers, updateCurrentUser : updateFollowing})
+    }catch(err){
+        res.status(400).json({message : "could not follow"})
+    }
+})
 
 
 module.exports = router;

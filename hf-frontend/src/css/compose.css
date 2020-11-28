@@ -1,0 +1,101 @@
+
+.compose__form{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-col);
+    border-left: 1px solid var(--border-col);
+    border-bottom: 1px solid var(--border-col);
+}
+
+.tweet__compose__button__container{
+    flex: .15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-mode-medium);
+    padding: 5px 0;
+
+}
+
+.send__tweet__btn{
+    background-color: var(--main-color);
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 40px;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 700;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+.send__tweet__btn:active{
+    transform: scale(1.05);
+    color: rgb(4, 20, 80);
+}
+
+.form__top{
+    flex: .15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    min-height: 30px;
+    border-bottom: 1px solid var(--border-col);
+}
+
+.fa-twitter{
+    color: var(--main-color);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.compose__home{
+    font-size: 22px;
+    font-family: var(--main-font);
+    color: white;
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.tweet__textarea{
+    background-color: var(--dark-mode-medium);
+    font-size: 19px;
+    color: var(--light-grey);
+    font-family: var(--main-font);
+    outline: none;
+    border: none;
+    flex: .85;
+    padding: 10px 0px 0 3px;
+    margin-right: 15px;
+    resize: none;
+    overflow: auto;
+    max-height: 110px;
+    flex-grow: 1;
+    font-family: var(--third-font);
+    border-bottom: 1px solid var(--border-col);
+}
+
+.tweet__length__counter{
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgba(153, 149, 149, 0.8);
+    font-weight: 600;
+}
+
+.tweet__length__counter > span{
+    color: var(--light-grey);
+}
+.tweet__compose__container{
+    display: flex;
+    flex: .6;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 4px;
+   
+}
+

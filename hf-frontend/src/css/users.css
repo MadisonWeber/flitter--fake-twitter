@@ -1,0 +1,97 @@
+.users__container{
+    margin-right: 20px;
+    max-height: 100%;
+    border-radius: 20px;
+    background-color: var(--dark-mode-lighter);
+    padding: 5px;
+
+}
+
+.users__container__title{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: var(--main-font);
+    margin: 10px 5px;
+    padding-left: 20px;
+}
+
+.users__follow_suggestion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 90%;
+}
+
+.suggested__user{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--border-col);
+    border-bottom: 1px solid var(--border-col);
+    padding: 8px 0;
+    animation: opacityLanding 200ms ease-in;
+}
+
+.suggested__user:hover{
+   background-color: rgb(43, 61, 82);
+}
+
+.suggested__user__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: .6;
+}
+
+.follow__user{
+    border-radius: 20px;
+    padding: 10px 20px ;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    font-weight: 700;
+    outline-width: 0;
+    flex: .2;
+    cursor: pointer;
+}
+
+.follow__user:active{
+    transform: scale(1.05);
+    background-color: rgb(51, 68, 88);
+}
+
+.unfollow__user{
+    border-radius: 20px;
+    padding: 10px 14px ;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    font-weight: 700;
+    outline-width: 0;
+    flex: .2;
+    cursor: pointer;
+}
+
+.unfollow__user:active{
+    transform: scale(1.05);
+    background-color: rgb(51, 68, 88);
+}
+
+.suggested__user__user{
+    font-size: 14px;
+}
+.suggested__user__followerCount,
+.suggested__user__followingCount{
+    font-size: 12px;
+    color: var(--dark-grey);
+}
+
+.show__more__users{
+    padding-left: 25px;
+    font-size: 16px;
+    color: var(--main-color);
+    margin: 20px 0;
+    cursor: pointer;
+}

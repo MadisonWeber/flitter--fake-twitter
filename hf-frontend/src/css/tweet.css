@@ -1,0 +1,138 @@
+.tweet__container{
+    width: 100%;
+    min-height: 120px;
+    border-left: 1px solid var(--border-col);
+    border-right: 1px solid var(--border-col);
+    border-top: 1px solid var(--border-col);
+    border-bottom: none;
+    display: flex;
+    max-width: 700px;
+    min-width: 300px;
+    position: relative;
+    padding-right: 5px;
+}
+
+
+
+.tweet__container__featured{
+    width: 100%;
+    min-height: 160px;
+    border: 1px solid var(--border-col);
+    background-color: var(--dark-mode-lighter);
+    border-radius: 10px;
+    display: flex;
+    max-width: 700px;
+    min-width: 300px;
+    position: relative;
+    margin-top: 8px;
+    padding: .8rem;
+
+}
+
+
+.tweet__container:hover{
+    background-color: var(--dark-mode-lighter);
+}
+
+.tweet__photo_container{
+    padding: 4px;
+}
+
+.tweet__main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding-right: 5px;
+}
+
+.tweet__top__container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tweet__user__name{
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-family: var(--main-font);
+}
+
+.tweet__time__since{
+    color: var(--dark-grey);
+    font-size: 13px;
+    font-family: var(--main-font);
+}
+
+.tweet__middle__container{
+    margin: 10px 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 8px;
+   
+}
+
+.tweet__content{
+    font-family: var(--third-font);
+    font-size: 14px;
+    font-family: var(--main-font);
+}
+
+.tweet__bottom__container{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+   
+    
+}
+
+.fa-heart, 
+.fa-retweet,
+.fa-comment, 
+.fa-upload{
+    margin-right: 3px;
+    color: var(--dark-grey);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.number-retweets,
+.number-comments,
+.number-likes{
+    color: var(--dark-grey);
+    font-size: 14px;
+}
+
+
+.fa-heart:hover,
+.fa-heart:hover ~ .number-likes{
+    color: rgb(199, 122, 108);
+
+}
+
+.fa-retweet:hover, 
+.fa-retweet:hover ~ .number-retweets{
+    color: rgb(75, 163, 75);
+}
+
+.fa-comment:hover, 
+.fa-comment:hover ~ .number-comments{
+    color: dodgerblue;
+}
+
+.tweet__comment__container, 
+.tweet_likes__container,
+.number-likes:hover,
+.tweet__retweet__container{
+    cursor: pointer;
+}
+
+.active-heart{
+    color: rgba(247, 115, 115, 0.75);
+}
